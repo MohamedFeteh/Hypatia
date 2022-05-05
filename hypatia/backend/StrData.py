@@ -643,6 +643,13 @@ class ReadSets:
                     ),
                     "columns": indexer_reg[reg],
                 },
+                 "Reserve_Margin_tech": {
+                    "value": 1,
+                    "index": pd.Index(
+                        ["AnnualProd_Per_UnitCapacity"], name="Performance Parameter"
+                    ),
+                    "columns": indexer_reg[reg],
+                },
             }
 
             if self.mode == "Planning":
